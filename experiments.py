@@ -9,7 +9,7 @@ app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
 @app.route('/index')
 def index():
 
-    return render_template('base_for_lesson1.html', title="meaw")
+    return render_template('base_for_lesson1.html', title=input())
 
 if __name__ == '__main__':
     app.run(port=8000, host='127.0.0.1')
